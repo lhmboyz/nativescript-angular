@@ -1,0 +1,63 @@
+{
+    "MODULES": {
+        "HOME": "Beranda"
+    },
+    "FIELDS": {
+        "NAME": "Name",
+        "EMAIL": "Email",
+        "USERNAME": "Username",
+        "PASSWORD": "Sandi"
+    },
+    "STATUSES": {
+        "ACTIVE": "Aktif",
+        "INACTIVE": "Non Aktif"
+    },
+    "BUTTONS": {
+        "SAVE": "Simpan",
+        "DELETE": "Hapus"
+    },
+    "OPTIONS": {
+        "SORT_BY": "Urutkan",
+        "MALE": "Pria",
+        "FEMALE": "Wanita",
+        "M": "Pria",
+        "F": "Wanita"
+    },
+    "MESSAGES": {
+        "LANGUAGE_CHANGED": "Bahasa Diganti",
+        "FOLLOW_US": "Ikuti Kami",
+        "LIKE_US_ON": "Sukai kami"
+    },
+    "VALIDATIONS": {
+        "IS_REQUIRED": "tidak boleh kosong",
+        "IS_NOT_VALID": "tidak valid"
+    },
+    "ERRORS": {
+        "ERROR": "Terjadi kesalahan",
+        "SORRY_YOU_DOESNT_HAVE_ACCESS": "Maaf, Anda tidak punya akses",
+        "LOGIN_REQUIRED": "Maaf, Anda harus login terlebih dahulu untuk melakukan aksi ini"
+    },
+    "SOCIAL_MEDIAS": {
+        "FACEBOOK": "Facebook",
+        "GOOGLE": "Google",
+        "INSTAGRAM": "Instagram",
+        "TWITTER": "Twitter",
+        "LINKEDIN": "Linkedin",
+        "YOUTUBE": "Youtube",
+        "WHATSAPP": "Whatsapp",
+        "LINE": "Line",
+        "BBM": "BBM",
+        "SKYPE": "Skype",
+        "TELEGRAM": "Telegram",
+        "WECHAT": "Wechat"
+    },
+    "FILES": {
+        "EXCEL": "Excel",
+        "PDF": "Pdf"
+    },
+    "OTHERS": {
+        "AND": "Dan",
+        "OR": "Atau",
+        "ON": "Di"
+    }
+}

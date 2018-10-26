@@ -1,0 +1,7 @@
+@import './variable';
+@import './color';
+
+body {
+    font-family: $default-font-family;
+    font-size: $default-font-size;
+}

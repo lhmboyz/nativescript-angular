@@ -1,0 +1,24 @@
+@import './variable';
+.color-default {
+    color: $default-color;
+}
+
+.color-white {
+    color: white;
+}
+
+.background-default {
+    background: $default-color;
+}
+
+.background-white {
+    background: white;
+}
+
+.border-default {
+    border: 1px solid $default-color;
+}
+
+.fill-default {
+    fill: $default-color;
+}
