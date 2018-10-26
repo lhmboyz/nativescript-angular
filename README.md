@@ -1,25 +1,47 @@
 # NativeScript Angular Boilerplate
+<div align="center">
 
-[![N|Solid](https://www.nativescript.org/images/default-source/logos/nativescript-logo.png?sfvrsn=2)](https://www.nativescript.org/)
+[![N|Solid](https://mobidev.biz/content/blog/AngularNative/NA-NS3.png)](https://www.nativescript.org/)
+
+
+[![Discourse topics](https://img.shields.io/badge/chat-telegram-blue.svg)](https://t.me/nativescript_id)
+
+</div>
+
+<br>
 
 ## Todos:
 - [x] Localization (i18n)
+- [x] Webpack configuration
+- [x] Custom SASS integration
 - [ ] Environment
+- [ ] Local storage function
+- [ ] Guard
+
+<br>
 
 ## How to start:
-Clone this repo & install the dependencies first:
+- Make sure that you have already installed Nativescript CLI, Android / iOS requirements, node.js, and any other requirements:
+
+- Clone this repo & install the dependencies first:
 ```sh
-$ git clone https://github.com/lhmboyz/nativescript-ns-angular
-$ cd nativescript-ns-angular
+$ git clone https://github.com/lhmboyz/nativescript-angular
+$ cd nativescript-angular
 $ npm install
 ```
 
-Run for android device:
+- Run on android device:
 ```sh
 $ tns run android --bundle
 ```
 
-Run for ios device:
+- Run on ios device:
 ```sh
 $ tns run ios --bundle
 ```
+
+<br>
+
+## References:
+> - https://www.nativescript.org
+> - https://docs.nativescript.org/angular/start/introduction

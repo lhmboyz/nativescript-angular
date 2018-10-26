@@ -151,6 +151,25 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "../$$_lazy_route_resource lazy recursive":
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "../$$_lazy_route_resource lazy recursive";
+
+/***/ }),
+
 /***/ "./app.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -166,10 +185,265 @@ exports.push([module.i, "/*\nIn NativeScript, the app.css file is where you plac
 
 /***/ }),
 
-/***/ "./main.ts":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "./app/app.component.html":
+/***/ (function(module, exports) {
 
-/* WEBPACK VAR INJECTION */(function(global) {
+module.exports = "<!-- https://docs.nativescript.org/angular/core-concepts/angular-navigation.html#page-router-outlet -->\n<page-router-outlet></page-router-outlet>\n"
+
+/***/ }),
+
+/***/ "./app/app.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _ngx_translate_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("../node_modules/@ngx-translate/core/fesm5/ngx-translate-core.js");
+
+
+var AppComponent = /** @class */ (function () {
+    function AppComponent(translateService) {
+        this.translateService = translateService;
+    }
+    AppComponent.prototype.ngOnInit = function () {
+    };
+    AppComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: "ns-app",
+            /*duleId: module.i*/
+            template: __webpack_require__("./app/app.component.html"),
+        }),
+        __metadata("design:paramtypes", [_ngx_translate_core__WEBPACK_IMPORTED_MODULE_1__["TranslateService"]])
+    ], AppComponent);
+    return AppComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./app/app.module.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HttpLoaderFactory", function() { return HttpLoaderFactory; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var nativescript_angular_nativescript_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("../node_modules/nativescript-angular/nativescript.module.js");
+/* harmony import */ var nativescript_angular_nativescript_module__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_nativescript_module__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var nativescript_angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("../node_modules/nativescript-angular/forms/index.js");
+/* harmony import */ var nativescript_angular_forms__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_forms__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var nativescript_angular_http_client__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("../node_modules/nativescript-angular/http-client/index.js");
+/* harmony import */ var nativescript_angular_http_client__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_http_client__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _ngx_translate_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("../node_modules/@ngx-translate/core/fesm5/ngx-translate-core.js");
+/* harmony import */ var _ngx_translate_http_loader__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("../node_modules/@ngx-translate/http-loader/fesm5/ngx-translate-http-loader.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("../node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _app_routing__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("./app/app.routing.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("./app/app.component.ts");
+/* harmony import */ var _components_global_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("./app/components/global.component.ts");
+/* harmony import */ var _components_home_home_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__("./app/components/home/home.component.ts");
+//Native Script
+
+
+
+
+
+
+//Angular
+
+//Components
+
+
+
+
+//Services
+
+function HttpLoaderFactory(http) {
+    return new _ngx_translate_http_loader__WEBPACK_IMPORTED_MODULE_5__["TranslateHttpLoader"](http);
+}
+var AppModule = /** @class */ (function () {
+    /*
+    Pass your application module to the bootstrapModule function located in main.ts to start your app
+    */
+    function AppModule() {
+    }
+    AppModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            bootstrap: [
+                _app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]
+            ],
+            imports: [
+                nativescript_angular_nativescript_module__WEBPACK_IMPORTED_MODULE_1__["NativeScriptModule"],
+                nativescript_angular_forms__WEBPACK_IMPORTED_MODULE_2__["NativeScriptFormsModule"],
+                nativescript_angular_http_client__WEBPACK_IMPORTED_MODULE_3__["NativeScriptHttpClientModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_6__["HttpClientModule"],
+                _app_routing__WEBPACK_IMPORTED_MODULE_7__["AppRoutingModule"],
+                _ngx_translate_core__WEBPACK_IMPORTED_MODULE_4__["TranslateModule"].forRoot({
+                    loader: {
+                        provide: _ngx_translate_core__WEBPACK_IMPORTED_MODULE_4__["TranslateLoader"],
+                        useFactory: HttpLoaderFactory,
+                        deps: [_angular_common_http__WEBPACK_IMPORTED_MODULE_6__["HttpClient"]]
+                    }
+                }),
+            ],
+            declarations: [
+                _app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"],
+                _components_global_component__WEBPACK_IMPORTED_MODULE_9__["GlobalComponent"],
+                _components_home_home_component__WEBPACK_IMPORTED_MODULE_10__["HomeComponent"],
+            ],
+            providers: [
+                _ngx_translate_core__WEBPACK_IMPORTED_MODULE_4__["TranslateService"],
+            ],
+            schemas: [
+                _angular_core__WEBPACK_IMPORTED_MODULE_0__["NO_ERRORS_SCHEMA"]
+            ]
+        })
+        /*
+        Pass your application module to the bootstrapModule function located in main.ts to start your app
+        */
+    ], AppModule);
+    return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./app/app.routing.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var nativescript_angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("../node_modules/nativescript-angular/router/index.js");
+/* harmony import */ var nativescript_angular_router__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_router__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_home_home_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./app/components/home/home.component.ts");
+
+
+
+var routes = [
+    { path: "", redirectTo: "/home", pathMatch: "full" },
+    { path: "home", component: _components_home_home_component__WEBPACK_IMPORTED_MODULE_2__["HomeComponent"] },
+];
+var AppRoutingModule = /** @class */ (function () {
+    function AppRoutingModule() {
+    }
+    AppRoutingModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            imports: [nativescript_angular_router__WEBPACK_IMPORTED_MODULE_1__["NativeScriptRouterModule"].forRoot(routes)],
+            exports: [nativescript_angular_router__WEBPACK_IMPORTED_MODULE_1__["NativeScriptRouterModule"]]
+        })
+    ], AppRoutingModule);
+    return AppRoutingModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./app/components/global.component.html":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./app/components/global.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GlobalComponent", function() { return GlobalComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _ngx_translate_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("../node_modules/@ngx-translate/core/fesm5/ngx-translate-core.js");
+
+
+var GlobalComponent = /** @class */ (function () {
+    function GlobalComponent(translateService) {
+        this.translateService = translateService;
+    }
+    GlobalComponent.prototype.ngOnInit = function () {
+    };
+    GlobalComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: "ns-global",
+            /*duleId: module.i*/
+            template: __webpack_require__("./app/components/global.component.html"),
+        }),
+        __metadata("design:paramtypes", [_ngx_translate_core__WEBPACK_IMPORTED_MODULE_1__["TranslateService"]])
+    ], GlobalComponent);
+    return GlobalComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./app/components/home/home.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<ActionBar title=\"{{'MODULES.HOME' | translate}}\" class=\"action-bar color-white background-default\">\n</ActionBar>"
+
+/***/ }),
+
+/***/ "./app/components/home/home.component.scss":
+/***/ (function(module, exports) {
+
+module.exports = ".color-default {\n  color: #60AFF0; }\n\n.color-white {\n  color: white; }\n\n.background-default {\n  background: #60AFF0; }\n\n.background-white {\n  background: white; }\n\n.border-default {\n  border: 1px solid #60AFF0; }\n\n.fill-default {\n  fill: #60AFF0; }\n\nbody {\n  font-family: Nunito, sans-serif;\n  font-size: 12px; }\n"
+
+/***/ }),
+
+/***/ "./app/components/home/home.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _global_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./app/components/global.component.ts");
+/* harmony import */ var _ngx_translate_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("../node_modules/@ngx-translate/core/fesm5/ngx-translate-core.js");
+
+
+
+var HomeComponent = /** @class */ (function (_super) {
+    __extends(HomeComponent, _super);
+    function HomeComponent(translateService) {
+        var _this = _super.call(this, translateService) || this;
+        _this.translateService = translateService;
+        return _this;
+    }
+    HomeComponent.prototype.ngOnInit = function () {
+        this.translateService.setDefaultLang('en');
+        this.translateService.use('en');
+    };
+    HomeComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: "ns-home",
+            /*duleId: module.i*/
+            template: __webpack_require__("./app/components/home/home.component.html"),
+            styles: [__webpack_require__("./app/components/home/home.component.scss")]
+        }),
+        __metadata("design:paramtypes", [_ngx_translate_core__WEBPACK_IMPORTED_MODULE_2__["TranslateService"]])
+    ], HomeComponent);
+    return HomeComponent;
+}(_global_component__WEBPACK_IMPORTED_MODULE_1__["GlobalComponent"]));
+
+
+
+/***/ }),
+
+/***/ "./main.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var nativescript_angular_platform__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../node_modules/nativescript-angular/platform.js");
+/* harmony import */ var nativescript_angular_platform__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(nativescript_angular_platform__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./app/app.module.ts");
+
         if (!global["__snapshot"]) {
             __webpack_require__("../node_modules/tns-core-modules/ui/frame/frame.js");
 __webpack_require__("../node_modules/tns-core-modules/ui/frame/activity.js");
@@ -179,7 +453,15 @@ __webpack_require__("../node_modules/tns-core-modules/ui/frame/activity.js");
             __webpack_require__("../node_modules/nativescript-dev-webpack/load-application-css-angular.js")();
             
         __webpack_require__("../node_modules/tns-core-modules/bundle-entry-points.js");
-        
+        // this import should be first in order to load some required settings (like globals and reflect-metadata)
+
+
+// A traditional NativeScript application starts by initializing global objects, setting up global CSS rules, creating, and navigating to the main page.
+// Angular applications need to take care of their own initialization: modules, components, directives, routes, DI providers.
+// A NativeScript Angular app needs to make both paradigms work together, so we provide a wrapper platform object, platformNativeScriptDynamic,
+// that sets up a NativeScript application and can bootstrap the Angular framework.
+Object(nativescript_angular_platform__WEBPACK_IMPORTED_MODULE_0__["platformNativeScriptDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_1__["AppModule"]);
+
     
         
     

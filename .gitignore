@@ -1,6 +1,5 @@
 # compiled output
-# /App_Resources
-# /platforms
+/platforms
 
 # dependencies
 /node_modules

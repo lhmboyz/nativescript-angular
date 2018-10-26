@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Workspace\\belajar\\nativescript\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-v4\\values-xlarge-v4.xml",
+            "outputFile": "D:\\Workspace\\belajar\\nativescript-angular1\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-v4\\values-xlarge-v4.xml",
             "map": [
                 {
                     "source": "C:\\Users\\asus\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\1b3460d252701378f1a5418dc9ffa7b2\\res\\values-xlarge-v4\\values-xlarge-v4.xml",

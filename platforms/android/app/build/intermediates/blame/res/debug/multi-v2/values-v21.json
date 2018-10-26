@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Workspace\\belajar\\nativescript\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+            "outputFile": "D:\\Workspace\\belajar\\nativescript-angular1\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\asus\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.0.0-alpha1.aar\\d149dfef362b41796db2d5694e5ff68b\\res\\values-v21\\values-v21.xml",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Workspace\\belajar\\nativescript\\platforms\\android\\app\\src\\main\\res\\values-v21\\styles.xml",
+                    "source": "D:\\Workspace\\belajar\\nativescript-angular1\\platforms\\android\\app\\src\\main\\res\\values-v21\\styles.xml",
                     "from": {
                         "startLines": "4,19,10,15",
                         "startColumns": "4,4,4,4",
@@ -42,7 +42,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Workspace\\belajar\\nativescript\\platforms\\android\\app\\src\\main\\res\\values-v21\\colors.xml",
+                    "source": "D:\\Workspace\\belajar\\nativescript-angular1\\platforms\\android\\app\\src\\main\\res\\values-v21\\colors.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "1",
