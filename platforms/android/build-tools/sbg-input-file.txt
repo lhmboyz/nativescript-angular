@@ -1,1 +1,0 @@
-D:\Workspace\belajar\nativescript-angular1\platforms\android\app/src/main/assets/app

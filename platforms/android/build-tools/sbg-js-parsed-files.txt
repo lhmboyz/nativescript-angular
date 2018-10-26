@@ -1,4 +1,0 @@
-D:\Workspace\belajar\nativescript-angular1\platforms\android\app\src\main\assets\app\bundle.js
-D:\Workspace\belajar\nativescript-angular1\platforms\android\app\src\main\assets\app\starter.js
-D:\Workspace\belajar\nativescript-angular1\platforms\android\app\src\main\assets\app\tns-java-classes.js
-D:\Workspace\belajar\nativescript-angular1\platforms\android\app\src\main\assets\app\vendor.js
