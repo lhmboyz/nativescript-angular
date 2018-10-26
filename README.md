@@ -13,10 +13,11 @@
 ## Todos:
 - [x] Localization (i18n)
 - [x] Webpack configuration
-- [x] Custom SASS integration
+- [x] SASS integration
 - [ ] Environment
 - [ ] Local storage function
 - [ ] Guard
+- [ ] Lazy Load module
 
 <br>
 
