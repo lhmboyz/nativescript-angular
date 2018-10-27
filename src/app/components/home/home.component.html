@@ -1,2 +1,10 @@
-<ActionBar title="{{'MODULES.HOME' | translate}}" class="action-bar color-white background-default">
-</ActionBar>
+<Page>
+    <ActionBar class="action-bar">
+        <Label text="{{'MODULES.HOME' | translate}}" textWrap="false" class="action-bar pull-left"></Label>
+    </ActionBar>
+</Page>
+
+<StackLayout>
+    <Label class="icmn" [text]="'icmn-user' | fonticon"></Label>
+    <Label class="fa" text="{{'fa-address-book' | fonticon}}"></Label>
+</StackLayout>

@@ -3,13 +3,15 @@ import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 //Angular
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 //Libraries
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { TNSFontIconModule, TNSFontIconService } from 'nativescript-ngx-fonticon';
+TNSFontIconService.debug = true;
 
 //Configs
 import { Config } from './config/config';
@@ -45,6 +47,10 @@ export function HttpLoaderFactory(http: HttpClient) {
                 deps: [HttpClient]
             }
         }),
+        TNSFontIconModule.forRoot({
+            'fa': './assets/fonts/fontawesome.css',
+            'icmn': './assets/fonts/icomoon.css'
+        })
     ],
     declarations: [
         AppComponent,

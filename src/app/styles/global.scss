@@ -1,7 +1,12 @@
 @import './variable';
 @import './color';
-
-body {
+@import './font-icon';
+* {
     font-family: $default-font-family;
     font-size: $default-font-size;
+}
+
+.action-bar {
+    color: white;
+    background: $default-color;
 }

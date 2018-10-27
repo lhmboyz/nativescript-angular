@@ -13,11 +13,14 @@
 ## Todos:
 - [x] Localization (i18n)
 - [x] Webpack configuration
-- [x] SASS integration
-- [ ] Environment
+- [x] Custom SASS (.scss)
+- [x] Custom Font (.ttf)
+- [x] Font icon (Font Awesome, Icomoon)
+- [ ] Environment variable
 - [ ] Local storage function
-- [ ] Guard
+- [ ] Guard middleware
 - [ ] Lazy Load module
+- [ ] Sidebar drawer
 
 <br>
 
