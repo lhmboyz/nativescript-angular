@@ -17,10 +17,11 @@
 - [x] Custom Font (.ttf)
 - [x] Font icon (Font Awesome, Icomoon)
 - [ ] Environment variable
-- [ ] Local storage function
+- [ ] Local storage
 - [ ] Guard middleware
-- [ ] Lazy Load module
-- [ ] Sidebar drawer
+- [x] Lazy Load module
+- [x] Bottom Bar
+- [ ] Dialog
 
 <br>
 

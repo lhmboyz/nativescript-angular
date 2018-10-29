@@ -1,0 +1,10 @@
+<GridLayout height="60" verticalAlignment="bottom" class="bottom-bar">
+    <GridLayout columns="*, *" height="60" backgroundColor="white">
+        <GridLayout col="0" [nsRouterLink]="routeCollection.HOME">
+            <Label class="item fa" [text]="'fa-home' | fonticon" horizontalAlignment="center" verticalAlignment="middle" [ngClass]="{'color-default':app.menu == 'home'}"></Label>
+        </GridLayout>
+        <GridLayout col="1" [nsRouterLink]="routeCollection.ABOUT">
+            <Label class="item fa" [text]="'fa-info-circle' | fonticon" horizontalAlignment="center" verticalAlignment="middle" [ngClass]="{'color-default':app.menu == 'about'}"></Label>
+        </GridLayout>        
+    </GridLayout>
+</GridLayout>

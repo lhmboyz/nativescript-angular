@@ -1,12 +1,20 @@
-import { NgModule } from "@angular/core";
-import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { Routes } from "@angular/router";
+import { NgModule } from '@angular/core';
+import { NativeScriptRouterModule } from 'nativescript-angular/router';
+import { Routes } from '@angular/router';
 
-import { HomeComponent } from "./components/home/home.component";
+//Layouts
+import { LayoutComponent } from './layouts/layout.component';
 
 const routes: Routes = [
-    { path: "", redirectTo: "/home", pathMatch: "full" },
-    { path: "home", component: HomeComponent },
+    {
+        path: '',
+        component: LayoutComponent,
+        children: [
+            { path: '', redirectTo: '/home', pathMatch: 'full' },
+            { path: 'home', loadChildren: './components/home/home.module#HomeModule' },
+            { path: 'about', loadChildren: './components/home/about.module#AboutModule' },
+        ]
+    }
 ];
 
 @NgModule({

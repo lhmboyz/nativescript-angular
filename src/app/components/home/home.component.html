@@ -1,10 +1,28 @@
-<Page>
-    <ActionBar class="action-bar">
-        <Label text="{{'MODULES.HOME' | translate}}" textWrap="false" class="action-bar pull-left"></Label>
-    </ActionBar>
-</Page>
+<ActionBar class="action-bar">
+    <Label text="{{'MODULES.HOME' | translate | uppercase}}" textWrap="false" class="action-bar pull-left"></Label>
+</ActionBar>
 
-<StackLayout>
-    <Label class="icmn" [text]="'icmn-user' | fonticon"></Label>
-    <Label class="fa" text="{{'fa-address-book' | fonticon}}"></Label>
-</StackLayout>
+<!-- SPRITE -->
+<AbsoluteLayout *ngFor="let i of models['sprite']">
+    <Image src="~/assets/images/logo.png" [left]="i.x" [top]="i.y" [ngStyle]="{'width':i.width, 'height':i.height}"></Image>
+</AbsoluteLayout>
+
+<!-- BUTTON -->
+<GridLayout height="60" verticalAlignment="bottom" style="margin-bottom:160px;">
+    <GridLayout columns="*, *" height="60" padding="0">
+        <GridLayout col="0">
+            <Button [text]="_isRunAnimation ? (('fa-stop' | fonticon) + ' ' + ('BUTTONS.STOP' | translate)) : (('fa-play' | fonticon) + ' ' + ('BUTTONS.RUN' | translate))" class="btn color-white background-default fa" (tap)="toggleAnimation()"></Button>
+        </GridLayout>
+        <GridLayout col="1">
+            <Button [text]="('fa-plus' | fonticon) + ' ' + ('FIELDS.ITEM' | translate)" class="btn color-white background-default fa" (tap)="addItem()"></Button>
+        </GridLayout>
+    </GridLayout>
+</GridLayout>
+
+<!-- WELCOME MESSAGE -->
+<FlexboxLayout justifyContent="center" alignItems="center">
+    <StackLayout class="text-center">
+        <Label text="{{config.APPLICATION_NAME | uppercase}}" textWrap="true" class="h1" color="white" background="black" padding="10" borderRadius="10"></Label>
+        <Label text="{{'OTHERS.BY' | translate | lowercase}}&nbsp;{{config.AUTHOR}}" textWrap="false" style="margin-bottom:75px;"></Label>
+    </StackLayout>
+</FlexboxLayout>

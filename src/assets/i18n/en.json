@@ -1,12 +1,14 @@
 {
     "MODULES": {
-        "HOME": "Home"
+        "HOME": "Home",
+        "ABOUT": "About"
     },
     "FIELDS": {
         "NAME": "Name",
         "EMAIL": "Email",
         "USERNAME": "Username",
-        "PASSWORD": "Password"
+        "PASSWORD": "Password",
+        "ITEM": "Item"
     },
     "STATUSES": {
         "ACTIVE": "Active",
@@ -14,7 +16,10 @@
     },
     "BUTTONS": {
         "SAVE": "Save",
-        "DELETE": "Delete"
+        "DELETE": "Delete",
+        "RUN": "Run",
+        "STOP": "Stop",
+        "ADD": "Add"
     },
     "OPTIONS": {
         "SORT_BY": "Sort by",
@@ -58,6 +63,7 @@
     "OTHERS": {
         "AND": "Dan",
         "OR": "Atau",
-        "ON": "On"
+        "ON": "On",
+        "BY": "By"
     }
 }

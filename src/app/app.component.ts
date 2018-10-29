@@ -8,6 +8,8 @@ import { TranslateService } from '@ngx-translate/core';
     templateUrl: "./app.component.html",
 })
 export class AppComponent implements OnInit {
+    public menu: string = 'home';
+    
     constructor(
         public translateService: TranslateService) {
     }

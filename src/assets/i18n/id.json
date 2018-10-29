@@ -1,12 +1,14 @@
 {
     "MODULES": {
-        "HOME": "Beranda"
+        "HOME": "Beranda",
+        "ABOUT": "Tentang"
     },
     "FIELDS": {
         "NAME": "Name",
         "EMAIL": "Email",
         "USERNAME": "Username",
-        "PASSWORD": "Sandi"
+        "PASSWORD": "Sandi",
+        "ITEM": "Item"
     },
     "STATUSES": {
         "ACTIVE": "Aktif",
@@ -14,7 +16,10 @@
     },
     "BUTTONS": {
         "SAVE": "Simpan",
-        "DELETE": "Hapus"
+        "DELETE": "Hapus",
+        "RUN": "Jalankan",
+        "STOP": "Berhenti",
+        "ADD": "Tambah"
     },
     "OPTIONS": {
         "SORT_BY": "Urutkan",
@@ -58,6 +63,7 @@
     "OTHERS": {
         "AND": "Dan",
         "OR": "Atau",
-        "ON": "Di"
+        "ON": "Di",
+        "BY": "Oleh"
     }
 }

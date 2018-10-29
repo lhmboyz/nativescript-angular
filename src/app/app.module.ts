@@ -1,26 +1,30 @@
 //Native Script
-import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
 
 //Angular
+import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 //Libraries
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TNSFontIconModule, TNSFontIconService } from 'nativescript-ngx-fonticon';
-TNSFontIconService.debug = true;
+//TNSFontIconService.debug = true;
 
 //Configs
 import { Config } from './config/config';
 
+//Layouts
+import { LayoutComponent } from "./layouts/layout.component";
+import { BottomBarComponent } from "./layouts/ui/bottom-bar.component";
+
 //Components
+import { SharedModule } from './shared.module';
 import { AppRoutingModule } from "./app.routing";
 import { AppComponent } from "./app.component";
 import { GlobalComponent } from "./components/global.component";
-import { HomeComponent } from "./components/home/home.component";
 
 //Services
 import { TranslateService } from '@ngx-translate/core';
@@ -50,12 +54,13 @@ export function HttpLoaderFactory(http: HttpClient) {
         TNSFontIconModule.forRoot({
             'fa': './assets/fonts/fontawesome.css',
             'icmn': './assets/fonts/icomoon.css'
-        })
+        }),
     ],
     declarations: [
         AppComponent,
         GlobalComponent,
-        HomeComponent,
+        LayoutComponent,
+        BottomBarComponent,
     ],
     providers: [
         TranslateService,
