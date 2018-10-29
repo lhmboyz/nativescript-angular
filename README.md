@@ -16,8 +16,7 @@
 ## Screenshot:
 <div align="center">
 
-![](https://github.com/lhmboyz/nativescript-angular/blob/master/screenshot/home.jpg)
-![](https://github.com/lhmboyz/nativescript-angular/blob/master/screenshot/about.jpg)
+![](https://github.com/lhmboyz/nativescript-angular/blob/master/screenshot/screenshot.jpg)
 
 </div>
 
