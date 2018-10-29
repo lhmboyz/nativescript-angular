@@ -4,7 +4,7 @@ import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 
 //Angular
-import { NgModule } from "@angular/core";
+import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { HttpClient } from '@angular/common/http';
 
 //Libraries
@@ -38,6 +38,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     ],
     declarations: [
         HomeComponent,
+    ],
+    schemas: [
+        NO_ERRORS_SCHEMA
     ]
 })
 export class HomeModule { }

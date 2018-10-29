@@ -10,8 +10,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 //Libraries
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { TNSFontIconModule, TNSFontIconService } from 'nativescript-ngx-fonticon';
-//TNSFontIconService.debug = true;
+import { TNSFontIconModule } from 'nativescript-ngx-fonticon';
 
 //Configs
 import { Config } from './config/config';

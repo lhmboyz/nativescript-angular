@@ -7,6 +7,6 @@
         <Image src="https://cdn-images-1.medium.com/max/272/1*YVyVa_5CAC_CkhrmgNS2Eg.png" stretch="aspectFit" style="width:50%; margin-bottom:25px;"></Image>
         <Label text="{{config.APPLICATION_NAME | uppercase}}" textWrap="true" class="h1"></Label>
         <Label text="{{'OTHERS.BY' | translate | lowercase}}&nbsp;{{config.AUTHOR}}" textWrap="false" style="margin-bottom:75px;"></Label>
-        <Image src="https://s19386.pcdn.co/wp-content/uploads/2017/10/github-logo-1.png" stretch="aspectFit" style="width:100;" (tap)="openUrl(config.REPO_ORIGIN_URL)"></Image>
+        <Image src="~/assets/images/github-logo.png" stretch="aspectFit" style="width:100;" (tap)="openUrl(config.REPO_ORIGIN_URL)"></Image>
     </StackLayout>
 </FlexboxLayout>

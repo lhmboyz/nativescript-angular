@@ -17,5 +17,8 @@ import { TranslateService } from '@ngx-translate/core';
     ],
     providers: [
     ],
+    schemas: [
+        NO_ERRORS_SCHEMA
+    ]
 })
 export class SharedModule { }
