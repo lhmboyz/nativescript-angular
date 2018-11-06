@@ -44,3 +44,5 @@ export function HttpLoaderFactory(http: HttpClient) {
     ]
 })
 export class AboutModule { }
+
+module["hot"].accept();

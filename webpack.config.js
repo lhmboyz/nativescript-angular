@@ -42,6 +42,7 @@ module.exports = env => {
         uglify, // --env.uglify
         report, // --env.report
         sourceMap, // --env.sourceMap
+        hmr, // --env.hmr
     } = env;
 
     const appFullPath = resolve(projectRoot, appPath);
@@ -183,9 +184,9 @@ module.exports = env => {
                 { test: /\.css$/, exclude: /[\/|\\]app\.css$/, use: "raw-loader" },
                 { test: /\.scss$/, exclude: /[\/|\\]app\.scss$/, use: ["raw-loader", "resolve-url-loader", "sass-loader"] },
 
+                // Compile TypeScript files with ahead-of-time compiler.
                 {
-                    test: /(?:\.ngfactory\.js|\.ngstyle\.js|\.ts)$/,
-                    use: [
+                    test: /.ts$/, use: [
                         "nativescript-dev-webpack/moduleid-compat-loader",
                         "@ngtools/webpack",
                     ]
@@ -264,6 +265,10 @@ module.exports = env => {
             projectRoot,
             webpackConfig: config,
         }));
+    }
+
+    if (hmr) {
+        config.plugins.push(new webpack.HotModuleReplacementPlugin());
     }
 
     return config;
