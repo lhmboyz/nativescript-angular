@@ -10,7 +10,7 @@ const routes: Routes = [
         path: '',
         component: LayoutComponent,
         children: [
-            { path: '', redirectTo: '/home', pathMatch: 'full' },
+            { path: '', redirectTo: '/about', pathMatch: 'full' },
             { path: 'home', loadChildren: './components/home/home.module#HomeModule' },
             { path: 'about', loadChildren: './components/home/about.module#AboutModule' },
         ]

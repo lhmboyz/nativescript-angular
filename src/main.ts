@@ -2,10 +2,11 @@ import { platformNativeScriptDynamic } from "nativescript-angular/platform";
 import { AppOptions } from "nativescript-angular/platform-common";
 
 import { AppModule } from "./app/app.module";
-import "./app/livesync-navigation";
+//import "./app/livesync-navigation";
 
 const options: AppOptions = {};
 // tslint:disable-next-line:no-string-literal
+/*
 if (module["hot"]) {
     const hmrUpdate = require("nativescript-dev-webpack/hmr").hmrUpdate;
 
@@ -24,6 +25,7 @@ if (module["hot"]) {
     // tslint:disable-next-line:no-string-literal
     module["hot"].accept(["./app/app.module"]);
 }
+*/
 
 // !!! Don't forget to pass the options when creating the platform
 platformNativeScriptDynamic(options).bootstrapModule(AppModule);

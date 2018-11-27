@@ -45,4 +45,4 @@ export function HttpLoaderFactory(http: HttpClient) {
 })
 export class HomeModule { }
 
-module["hot"].accept();
+//module["hot"].accept();
